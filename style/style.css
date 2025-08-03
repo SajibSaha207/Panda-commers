@@ -38,16 +38,28 @@ font-weight: bold;
  }
  .drop-down{
 position: absolute;
-top: 100%;
+top: 30%;
 left: -50px;
 padding: 25px 10px;
 list-style: none;
 background-color: white;
 text-align: center;
-width: 180px;
+width: 130px;
 border-radius: 0 0 15px 15px;
- }
+box-shadow: 5px -5px 6px -7px rgba(0,0,0,0.76);
+visibility: hidden;
 
+
+
+ }
+ .drop-down li{
+   margin: 5px 0;
+ }
+.product-li:hover .drop-down{
+   visibility: visible;
+   top: 100%;
+   transition: 0.5s;
+}
  .search-parent{
 position: relative;
 color: #BABABA;
